@@ -20,7 +20,7 @@ interface IERC20 {
 
 contract Presale is ReentrancyGuard {
     address public owner; // Dueño del contrato.
-    IERC20 public token; // TRTL Token.
+    IERC20 public token; // Token.
     uint public tokensPerBNB = 750; // Cantidad de tokens que se van a repartir por cada BNB aportado.
     uint public ending; // Tiempo que va finalizar la preventa.
     bool public presaleStarted = false; // Indica si la preventa ha sido iniciada o no.
